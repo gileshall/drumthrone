@@ -1,0 +1,71 @@
+{
+  "score": 0.0,
+  "checks": {
+    "script_present": {
+      "weight": 1,
+      "value": 0.0,
+      "detail": "no out/drum_solo.py shared"
+    },
+    "only_mido": {
+      "weight": 1,
+      "value": 0.0,
+      "detail": "not reached"
+    },
+    "runs": {
+      "weight": 2,
+      "value": 0.0,
+      "detail": "not reached"
+    },
+    "midi_parses": {
+      "weight": 1,
+      "value": 0.0,
+      "detail": "not reached"
+    },
+    "drums_on_channel_10": {
+      "weight": 1,
+      "value": 0.0,
+      "detail": "not reached"
+    },
+    "duration": {
+      "weight": 1,
+      "value": 0.0,
+      "detail": "not reached"
+    },
+    "deterministic": {
+      "weight": 1,
+      "value": 0.0,
+      "detail": "not reached"
+    },
+    "gm_coverage": {
+      "weight": 0,
+      "value": 0.0,
+      "detail": "not reached"
+    },
+    "no_chromatic_sweeps": {
+      "weight": 0,
+      "value": 0.0,
+      "detail": "not reached"
+    },
+    "tempo_change": {
+      "weight": 0,
+      "value": 0.0,
+      "detail": "not reached"
+    },
+    "meter_change": {
+      "weight": 0,
+      "value": 0.0,
+      "detail": "not reached"
+    },
+    "velocity_span": {
+      "weight": 0,
+      "value": 0.0,
+      "detail": "not reached"
+    },
+    "humanized": {
+      "weight": 0,
+      "value": 0.0,
+      "detail": "not reached"
+    }
+  },
+  "stats": {}
+}

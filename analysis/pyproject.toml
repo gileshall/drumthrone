@@ -1,0 +1,15 @@
+[project]
+name = "drum-analysis"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "librosa>=1.0.0",
+    "mido>=1.3.3",
+    "numpy>=2.5.3",
+    "pandas>=3.0.6",
+    "plotly>=7.1.0",
+    "pyloudnorm>=0.2.0",
+    "scipy>=1.18.1",
+    "soundfile>=0.14.0",
+    "umap-learn>=0.5.12",
+]

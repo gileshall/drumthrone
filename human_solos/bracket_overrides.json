@@ -1,0 +1,47 @@
+{
+ "buddy_rich-impossible_drum_solo": {
+  "start": 8,
+  "end": 236,
+  "status": "corrected"
+ },
+ "daniel_glass-century_project": {
+  "start": 31,
+  "end": 320.6,
+  "status": "corrected"
+ },
+ "horacio_hernandez-the_octopus": {
+  "start": 106,
+  "end": 281.36,
+  "status": "confirmed"
+ },
+ "jojo_mayer-hudson": {
+  "start": 10.2,
+  "end": 133,
+  "status": "corrected"
+ },
+ "mark_guiliana-drumeo": {
+  "start": 1.1,
+  "end": 272.32,
+  "status": "corrected"
+ },
+ "senri_kawaguchi-drumeo": {
+  "start": 13,
+  "end": 281,
+  "status": "corrected"
+ },
+ "steve_smith-khanda_west": {
+  "start": 0,
+  "end": 117.07,
+  "status": "corrected"
+ },
+ "terry_bozzio-pats_changes": {
+  "start": 16,
+  "end": 333.03,
+  "status": "corrected"
+ },
+ "todd_sucherman-drumeo": {
+  "start": 1,
+  "end": 263.04,
+  "status": "corrected"
+ }
+}

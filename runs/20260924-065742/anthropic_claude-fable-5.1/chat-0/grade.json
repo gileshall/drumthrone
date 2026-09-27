@@ -1,0 +1,81 @@
+{
+  "score": 100.0,
+  "checks": {
+    "script_present": {
+      "weight": 1,
+      "value": 1.0,
+      "detail": "out/drum_solo.py"
+    },
+    "only_mido": {
+      "weight": 1,
+      "value": 1.0,
+      "detail": "imports: ['math', 'mido', 'random']"
+    },
+    "runs": {
+      "weight": 2,
+      "value": 1.0,
+      "detail": "exit 0"
+    },
+    "midi_parses": {
+      "weight": 1,
+      "value": 1.0,
+      "detail": ""
+    },
+    "drums_on_channel_10": {
+      "weight": 1,
+      "value": 1.0,
+      "detail": "909/909 note-ons on channel 10"
+    },
+    "gm_coverage": {
+      "weight": 0,
+      "value": 0.638,
+      "detail": "missing: [35, 39, 40, 58, 59, 67, 68, 69, 70, 71, 72, 73, 74, 78, 79, 80, 81]"
+    },
+    "no_chromatic_sweeps": {
+      "weight": 0,
+      "value": 1.0,
+      "detail": "longest semitone run: 2"
+    },
+    "duration": {
+      "weight": 1,
+      "value": 1.0,
+      "detail": "125.6s (want 110-130)"
+    },
+    "tempo_change": {
+      "weight": 0,
+      "value": 0.0,
+      "detail": "[96.0] bpm"
+    },
+    "meter_change": {
+      "weight": 0,
+      "value": 0.0,
+      "detail": "['4/4']"
+    },
+    "velocity_span": {
+      "weight": 0,
+      "value": 1.0,
+      "detail": "29-127 (want <=30 and 127)"
+    },
+    "humanized": {
+      "weight": 0,
+      "value": 1.0,
+      "detail": "94% of hits off a 1/24-beat grid; 98 distinct velocities"
+    },
+    "deterministic": {
+      "weight": 1,
+      "value": 1.0,
+      "detail": "identical MIDI"
+    }
+  },
+  "stats": {
+    "midi_seconds": 125.62,
+    "notes": 909,
+    "drum_notes": 909,
+    "tempos_bpm": [
+      96.0
+    ],
+    "time_signatures": [
+      "4/4"
+    ]
+  }
+}

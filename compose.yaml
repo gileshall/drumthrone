@@ -1,0 +1,38 @@
+# The harness runs in a container and starts sandboxes through the host's
+# Docker socket. bench.py hands host paths to `docker run -v`, so the project
+# is mounted at its host path. Run compose from this directory, against a
+# daemon that shares this filesystem (Docker Desktop, not a remote host).
+#
+#   docker --context desktop-linux compose build
+#   docker --context desktop-linux compose run --rm bench <model> [<model> ...] [bench.py flags]
+services:
+  sandbox:
+    build: .
+    image: drumbench
+    scale: 0  # build only; bench.py starts these itself
+
+  bench:
+    build:
+      dockerfile_inline: |
+        FROM python:3.11-slim-bookworm
+        COPY --from=docker:28-cli /usr/local/bin/docker /usr/local/bin/docker
+        RUN pip install --no-cache-dir "httpx>=0.27,<1"
+    image: drumbench-harness
+    user: "${HOST_UID:?set HOST_UID in .env}:${HOST_GID:?set HOST_GID in .env}"
+    group_add: ["0"]  # docker.sock is root:root 0660
+    init: true
+    working_dir: ${PWD}
+    volumes:  # a missing source is an error, not created
+      - type: bind
+        source: /var/run/docker.sock
+        target: /var/run/docker.sock
+        bind: {create_host_path: false}
+      - type: bind
+        source: ${PWD}
+        target: ${PWD}
+        bind: {create_host_path: false}
+    environment:
+      OPENROUTER_API_KEY: ${OPENROUTER_API_KEY}
+      HOME: /tmp
+      PYTHONUNBUFFERED: "1"
+    entrypoint: ["python", "bench.py"]

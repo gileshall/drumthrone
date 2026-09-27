@@ -1,0 +1,71 @@
+{
+  "score": 25.0,
+  "checks": {
+    "script_present": {
+      "weight": 1,
+      "value": 1.0,
+      "detail": "out/drum_solo.py"
+    },
+    "only_mido": {
+      "weight": 1,
+      "value": 1.0,
+      "detail": "imports: ['math', 'mido', 'random']"
+    },
+    "runs": {
+      "weight": 2,
+      "value": 0.0,
+      "detail": "exit 1; no solo.mid written: Traceback (most recent call last):\n  File \"/work/drum_solo.py\", line 553, in <module>\n    main()\n  File \"/work/drum_solo.py\", line 536, in main\n    build()\n  File \"/work/drum_solo.py\", line 295, in build\n    hit(135.5, CONGA_H, 70, 0.12)          # colour at phrase end\n               ^^^^^^^\nNameError: name 'CONGA_H' is not defined"
+    },
+    "midi_parses": {
+      "weight": 1,
+      "value": 0.0,
+      "detail": "not reached"
+    },
+    "drums_on_channel_10": {
+      "weight": 1,
+      "value": 0.0,
+      "detail": "not reached"
+    },
+    "duration": {
+      "weight": 1,
+      "value": 0.0,
+      "detail": "not reached"
+    },
+    "deterministic": {
+      "weight": 1,
+      "value": 0.0,
+      "detail": "not reached"
+    },
+    "gm_coverage": {
+      "weight": 0,
+      "value": 0.0,
+      "detail": "not reached"
+    },
+    "no_chromatic_sweeps": {
+      "weight": 0,
+      "value": 0.0,
+      "detail": "not reached"
+    },
+    "tempo_change": {
+      "weight": 0,
+      "value": 0.0,
+      "detail": "not reached"
+    },
+    "meter_change": {
+      "weight": 0,
+      "value": 0.0,
+      "detail": "not reached"
+    },
+    "velocity_span": {
+      "weight": 0,
+      "value": 0.0,
+      "detail": "not reached"
+    },
+    "humanized": {
+      "weight": 0,
+      "value": 0.0,
+      "detail": "not reached"
+    }
+  },
+  "stats": {}
+}

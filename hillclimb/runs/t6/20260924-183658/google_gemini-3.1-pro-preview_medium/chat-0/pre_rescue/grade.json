@@ -1,0 +1,71 @@
+{
+  "score": 25.0,
+  "checks": {
+    "script_present": {
+      "weight": 1,
+      "value": 1.0,
+      "detail": "out/drum_solo.py"
+    },
+    "only_mido": {
+      "weight": 1,
+      "value": 1.0,
+      "detail": "imports: ['math', 'mido', 'random']"
+    },
+    "runs": {
+      "weight": 2,
+      "value": 0.0,
+      "detail": "exit 1; no solo.mid written: hannel=9, note=pitch, velocity=vel, time=delta)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.11/site-packages/mido/messages/messages.py\", line 115, in __init__\n    msgdict = make_msgdict(type, args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.11/site-packages/mido/messages/specs.py\", line 127, in make_msgdict\n    raise LookupError(f'Unknown message type {type_!r}')\nLookupError: Unknown message type 'on'"
+    },
+    "midi_parses": {
+      "weight": 1,
+      "value": 0.0,
+      "detail": "not reached"
+    },
+    "drums_on_channel_10": {
+      "weight": 1,
+      "value": 0.0,
+      "detail": "not reached"
+    },
+    "duration": {
+      "weight": 1,
+      "value": 0.0,
+      "detail": "not reached"
+    },
+    "deterministic": {
+      "weight": 1,
+      "value": 0.0,
+      "detail": "not reached"
+    },
+    "gm_coverage": {
+      "weight": 0,
+      "value": 0.0,
+      "detail": "not reached"
+    },
+    "no_chromatic_sweeps": {
+      "weight": 0,
+      "value": 0.0,
+      "detail": "not reached"
+    },
+    "tempo_change": {
+      "weight": 0,
+      "value": 0.0,
+      "detail": "not reached"
+    },
+    "meter_change": {
+      "weight": 0,
+      "value": 0.0,
+      "detail": "not reached"
+    },
+    "velocity_span": {
+      "weight": 0,
+      "value": 0.0,
+      "detail": "not reached"
+    },
+    "humanized": {
+      "weight": 0,
+      "value": 0.0,
+      "detail": "not reached"
+    }
+  },
+  "stats": {}
+}

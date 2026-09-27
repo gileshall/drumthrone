@@ -1,0 +1,16 @@
+.env
+.venv/
+__pycache__/
+.DS_Store
+assets/*.sf2
+human_solos/*.mp3
+transcriptions/
+runs/**/solo.mp3
+hillclimb/runs/**/solo.mp3
+hillclimb/work/
+analysis/out/
+analysis/site/
+analysis/publish/
+analysis/work/
+analysis/review/
+analysis/images/

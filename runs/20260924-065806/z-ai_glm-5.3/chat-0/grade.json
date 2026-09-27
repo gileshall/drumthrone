@@ -1,0 +1,96 @@
+{
+  "score": 100.0,
+  "checks": {
+    "script_present": {
+      "weight": 1,
+      "value": 1.0,
+      "detail": "out/drum_solo.py"
+    },
+    "only_mido": {
+      "weight": 1,
+      "value": 1.0,
+      "detail": "imports: ['math', 'mido', 'sys']"
+    },
+    "runs": {
+      "weight": 2,
+      "value": 1.0,
+      "detail": "exit 0"
+    },
+    "midi_parses": {
+      "weight": 1,
+      "value": 1.0,
+      "detail": ""
+    },
+    "drums_on_channel_10": {
+      "weight": 1,
+      "value": 1.0,
+      "detail": "964/964 note-ons on channel 10"
+    },
+    "gm_coverage": {
+      "weight": 0,
+      "value": 0.553,
+      "detail": "missing: [35, 39, 40, 52, 58, 59, 60, 61, 64, 67, 68, 69, 70, 71, 72, 73, 74, 78, 79, 80, 81]"
+    },
+    "no_chromatic_sweeps": {
+      "weight": 0,
+      "value": 1.0,
+      "detail": "longest semitone run: 2"
+    },
+    "duration": {
+      "weight": 1,
+      "value": 1.0,
+      "detail": "122.8s (want 110-130)"
+    },
+    "tempo_change": {
+      "weight": 0,
+      "value": 1.0,
+      "detail": "[84.9, 87.8, 90.7, 93.5, 96.2, 98.9, 101.5, 104.0, 106.5, 108.8, 111.1, 113.3, 115.3, 117.2, 118.8, 120.0] bpm"
+    },
+    "meter_change": {
+      "weight": 0,
+      "value": 0.0,
+      "detail": "['4/4']"
+    },
+    "velocity_span": {
+      "weight": 0,
+      "value": 1.0,
+      "detail": "22-127 (want <=30 and 127)"
+    },
+    "humanized": {
+      "weight": 0,
+      "value": 1.0,
+      "detail": "93% of hits off a 1/24-beat grid; 106 distinct velocities"
+    },
+    "deterministic": {
+      "weight": 1,
+      "value": 1.0,
+      "detail": "identical MIDI"
+    }
+  },
+  "stats": {
+    "midi_seconds": 122.78,
+    "notes": 964,
+    "drum_notes": 964,
+    "tempos_bpm": [
+      84.9,
+      87.8,
+      90.7,
+      93.5,
+      96.2,
+      98.9,
+      101.5,
+      104.0,
+      106.5,
+      108.8,
+      111.1,
+      113.3,
+      115.3,
+      117.2,
+      118.8,
+      120.0
+    ],
+    "time_signatures": [
+      "4/4"
+    ]
+  }
+}

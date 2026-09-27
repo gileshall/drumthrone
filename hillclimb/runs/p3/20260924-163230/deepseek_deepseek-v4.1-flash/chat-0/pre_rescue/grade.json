@@ -1,0 +1,71 @@
+{
+  "score": 25.0,
+  "checks": {
+    "script_present": {
+      "weight": 1,
+      "value": 1.0,
+      "detail": "out/drum_solo.py"
+    },
+    "only_mido": {
+      "weight": 1,
+      "value": 1.0,
+      "detail": "imports: ['collections', 'mido']"
+    },
+    "runs": {
+      "weight": 2,
+      "value": 0.0,
+      "detail": "exit 1; no solo.mid written: Traceback (most recent call last):\n  File \"/work/drum_solo.py\", line 584, in <module>\n    bar_latin(40, 0)\n  File \"/work/drum_solo.py\", line 379, in bar_latin\n    pat = [(0, CONGA_H, 94), (2, CONGA_O, 74), (3, CONGA_M, 82),\n                                                   ^^^^^^^\nNameError: name 'CONGA_M' is not defined. Did you mean: 'CONGA_H'?"
+    },
+    "midi_parses": {
+      "weight": 1,
+      "value": 0.0,
+      "detail": "not reached"
+    },
+    "drums_on_channel_10": {
+      "weight": 1,
+      "value": 0.0,
+      "detail": "not reached"
+    },
+    "duration": {
+      "weight": 1,
+      "value": 0.0,
+      "detail": "not reached"
+    },
+    "deterministic": {
+      "weight": 1,
+      "value": 0.0,
+      "detail": "not reached"
+    },
+    "gm_coverage": {
+      "weight": 0,
+      "value": 0.0,
+      "detail": "not reached"
+    },
+    "no_chromatic_sweeps": {
+      "weight": 0,
+      "value": 0.0,
+      "detail": "not reached"
+    },
+    "tempo_change": {
+      "weight": 0,
+      "value": 0.0,
+      "detail": "not reached"
+    },
+    "meter_change": {
+      "weight": 0,
+      "value": 0.0,
+      "detail": "not reached"
+    },
+    "velocity_span": {
+      "weight": 0,
+      "value": 0.0,
+      "detail": "not reached"
+    },
+    "humanized": {
+      "weight": 0,
+      "value": 0.0,
+      "detail": "not reached"
+    }
+  },
+  "stats": {}
+}

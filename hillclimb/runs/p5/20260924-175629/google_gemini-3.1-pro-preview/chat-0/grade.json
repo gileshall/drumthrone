@@ -1,0 +1,99 @@
+{
+  "score": 100.0,
+  "checks": {
+    "script_present": {
+      "weight": 1,
+      "value": 1.0,
+      "detail": "out/drum_solo.py"
+    },
+    "only_mido": {
+      "weight": 1,
+      "value": 1.0,
+      "detail": "imports: ['math', 'mido', 'random']"
+    },
+    "runs": {
+      "weight": 2,
+      "value": 1.0,
+      "detail": "exit 0"
+    },
+    "midi_parses": {
+      "weight": 1,
+      "value": 1.0,
+      "detail": ""
+    },
+    "drums_on_channel_10": {
+      "weight": 1,
+      "value": 1.0,
+      "detail": "1583/1583 note-ons on channel 10"
+    },
+    "gm_coverage": {
+      "weight": 0,
+      "value": 0.34,
+      "detail": "missing: [35, 37, 39, 40, 52, 54, 56, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81]"
+    },
+    "no_chromatic_sweeps": {
+      "weight": 0,
+      "value": 1.0,
+      "detail": "longest semitone run: 2"
+    },
+    "duration": {
+      "weight": 1,
+      "value": 1.0,
+      "detail": "118.5s (want 110-130)"
+    },
+    "tempo_change": {
+      "weight": 0,
+      "value": 1.0,
+      "detail": "[120.0, 125.0, 130.0, 132.0, 132.4, 132.8, 133.2, 133.6, 134.0, 134.4, 134.8, 135.2, 135.6, 136.0, 136.4, 136.8, 137.2, 137.6, 138.0] bpm"
+    },
+    "meter_change": {
+      "weight": 0,
+      "value": 0.0,
+      "detail": "['4/4']"
+    },
+    "velocity_span": {
+      "weight": 0,
+      "value": 1.0,
+      "detail": "1-127 (want <=30 and 127)"
+    },
+    "humanized": {
+      "weight": 0,
+      "value": 1.0,
+      "detail": "94% of hits off a 1/24-beat grid; 127 distinct velocities"
+    },
+    "deterministic": {
+      "weight": 1,
+      "value": 1.0,
+      "detail": "identical MIDI"
+    }
+  },
+  "stats": {
+    "midi_seconds": 118.54,
+    "notes": 1583,
+    "drum_notes": 1583,
+    "tempos_bpm": [
+      120.0,
+      125.0,
+      130.0,
+      132.0,
+      132.4,
+      132.8,
+      133.2,
+      133.6,
+      134.0,
+      134.4,
+      134.8,
+      135.2,
+      135.6,
+      136.0,
+      136.4,
+      136.8,
+      137.2,
+      137.6,
+      138.0
+    ],
+    "time_signatures": [
+      "4/4"
+    ]
+  }
+}

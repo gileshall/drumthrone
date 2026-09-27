@@ -1,0 +1,24 @@
+{
+  "models": [
+    "google/gemini-3.1-pro-preview",
+    "anthropic/claude-opus-5.5",
+    "deepseek/deepseek-v4.1-flash"
+  ],
+  "mode": "chat",
+  "runs": 3,
+  "prompt": "Using Python 3 and mido (no other MIDI libraries), write a single script, drum_solo.py, that generates the best two minute drum solo you can as a General MIDI file, solo.mid, on MIDI channel 10. It will be played back on a General MIDI synthesizer.\n\nMake it sound like a great drummer playing:\n- Develop motifs: state them, vary them, bring them back, and contrast density and dynamics to build tension and release.\n- Let it flow the way a great drummer's hands do: long runs of singles and doubles that travel around the kit, rolls that swell and resolve, fills that carry into the next downbeat.\n- Let the time breathe like a live performance: the pulse can lean forward in the heat of a passage and settle back when it relaxes.\n- Pace it like a showcase solo: keep the energy alive all the way through and land the final hit instead of fading away.\n- Shape dynamics inside phrases, with accents, ghost notes and crescendos, more than by making whole sections louder or softer.\n- Give it a consistent feel: deliberate placement (swing, pushing ahead of or laying back behind the beat) and ghost notes against accents, rather than random jitter.\n- Keep it playable by one drummer: at most two hands and two feet striking at any instant.\n- The drum kit carries the solo; the rest of the General MIDI percussion set (notes 35\u201381) is there for color when it serves the music.\n\nRunning the script in an empty directory must write solo.mid there, identical on every run. Share drum_solo.py.\n",
+  "image": "drumbench",
+  "out": "/Users/ghall/code/scratch/drum_benchmark/hillclimb/runs/p4",
+  "jobs": 5,
+  "max_turns": 40,
+  "max_nudges": 2,
+  "max_cost": 2.0,
+  "wall_clock": 1800,
+  "max_tokens": null,
+  "temperature": null,
+  "seed": null,
+  "provider": null,
+  "chat_repairs": 0,
+  "run_timeout": 300,
+  "network": false
+}
